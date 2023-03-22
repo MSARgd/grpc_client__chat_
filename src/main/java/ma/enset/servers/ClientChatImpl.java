@@ -6,12 +6,8 @@ import io.grpc.stub.StreamObserver;
 import ma.enset.subs.Chat;
 import ma.enset.subs.chatServiceGrpc;
 
-import java.util.Timer;
-
-public class ClientChatImpl extends chatServiceGrpc.chatServiceImplBase {
+public class ClientChatImpl  extends chatServiceGrpc.chatServiceImplBase {
     public static void main(String[] args) {
-
-
         ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 2023)
                 .usePlaintext()
                 .build();
@@ -37,40 +33,38 @@ public class ClientChatImpl extends chatServiceGrpc.chatServiceImplBase {
             }
 
         });
-
-
         /** ====================================================================**/
-        streamObserver.onNext(Chat.ChatRequest.newBuilder()
-                .setUserId(1)
-                .setChatId(1)
-                .setChatMessage("What up?")
-                .build()
-        );
+         streamObserver.onNext(Chat.ChatRequest.newBuilder()
+         .setUserId(1)
+         .setChatId(1)
+         .setChatMessage("What up?")
+         .build()
+         );
         /**===================================================================**/
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+         try {
+         Thread.sleep(3000);
+         } catch (InterruptedException e) {
+         e.printStackTrace();
+         }
         /**============================================================**/
-        streamObserver.onNext(Chat.ChatRequest.newBuilder()
-                .setUserId(2)
-                .setChatId(1)
-                .setChatMessage("Nothing Much. You?")
-                .build()
-        );
+         streamObserver.onNext(Chat.ChatRequest.newBuilder()
+         .setUserId(2)
+         .setChatId(1)
+         .setChatMessage("Nothing Much. You?")
+         .build()
+         );
         /**=======================================**/
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        streamObserver.onNext(Chat.ChatRequest.newBuilder()
-                .setUserId(1)
-                .setChatId(1)
-                .setChatMessage("Chillin")
-                .build()
-        );
-        streamObserver.onCompleted();
+         try {
+         Thread.sleep(3000);
+         } catch (InterruptedException e) {
+         e.printStackTrace();
+         }
+         streamObserver.onNext(Chat.ChatRequest.newBuilder()
+         .setUserId(1)
+         .setChatId(1)
+         .setChatMessage("Chillin")
+         .build()
+         );
+         streamObserver.onCompleted();
     }
 }
