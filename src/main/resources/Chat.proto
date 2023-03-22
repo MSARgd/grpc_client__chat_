@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_package ="ma.enset.subs";
+service chatService{
+  rpc chat(stream ChatRequest) returns(stream ChatResponse);
+}
+message ChatRequest{
+  string chatMessage=1;
+  int64 userId=2;
+  int64 chatId=3;
+}
+
+message ChatResponse{
+  string chatMessage=1;
+  int64 userId=2;
+  int64 chatId=3;
+}
