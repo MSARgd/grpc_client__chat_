@@ -1,5 +1,4 @@
 package ma.enset.servers;
-
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
@@ -13,6 +12,7 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import ma.enset.subs.Chat;
 import ma.enset.subs.chatServiceGrpc;
+
 public class ChatApp extends Application{
     private chatServiceGrpc.chatServiceStub stub;
     private StreamObserver<Chat.ChatRequest> streamObserver;
@@ -20,7 +20,6 @@ public class ChatApp extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
         BorderPane root = new BorderPane();
-
         HBox hBox = new HBox();
         TextArea textArea = new TextArea();
         textArea.setPrefWidth(300);
@@ -45,6 +44,7 @@ public class ChatApp extends Application{
                 System.out.println("[CLIENT] Received Message for Chat ID [" +
                         chatResponse.getChatId() + "] from User ID [" + chatResponse.getUserId() + "] Message is: " +
                         chatResponse.getChatMessage());
+
             }
 
             @Override
