@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44711532-fbdd-43d0-b7f2-4b41bbb4919a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/enset/entities/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/enset/interceptors/ChatInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/servers/ChatApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/servers/ChatApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/entities/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/interceptors/ChatInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/interceptors/ChatInterceptor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +147,7 @@
       <workItem from="1679470728993" duration="2565000" />
       <workItem from="1679476803390" duration="10093000" />
       <workItem from="1679487642882" duration="2377000" />
-      <workItem from="1679687494082" duration="6269000" />
+      <workItem from="1679687494082" duration="6625000" />
     </task>
     <servers />
   </component>

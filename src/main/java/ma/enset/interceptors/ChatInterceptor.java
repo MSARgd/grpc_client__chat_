@@ -6,8 +6,8 @@ public class ChatInterceptor  implements ServerInterceptor {
 
     @Override
     public <ReqT, RespT> ServerCall.Listener<ReqT> interceptCall(ServerCall<ReqT, RespT> serverCall, Metadata metadata, ServerCallHandler<ReqT, RespT> serverCallHandler) {
-
-        return  new ForwardingServerCallListener.SimpleForwardingServerCallListener<ReqT>() {
+        ServerCall.Listener<ReqT> listener = serverCallHandler.startCall(serverCall,metadata);
+        return  new ForwardingServerCallListener.SimpleForwardingServerCallListener<ReqT>(listener) {
             @Override
             protected ServerCall.Listener<ReqT> delegate() {
                 return super.delegate();
@@ -62,6 +62,6 @@ public class ChatInterceptor  implements ServerInterceptor {
             protected void finalize() throws Throwable {
                 super.finalize();
             }
-        }
+        };
     }
 }
