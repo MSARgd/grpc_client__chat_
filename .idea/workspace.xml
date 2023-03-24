@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44711532-fbdd-43d0-b7f2-4b41bbb4919a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/enset/servers/ChatApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/servers/ChatApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/servers/ChatApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/servers/ClientChatImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/servers/ClientChatImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/subs/Chat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/subs/chatServiceGrpc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Chat.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Chat.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,21 +40,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/msa/Documents/M1/S2/Programmation_distribuée_et_middlewares/midllewares/GRPC/Chat/gRPC_CLIENT_CHAT",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/msa/Documents/M1/S2/Programmation_distribuée_et_middlewares/midllewares/GRPC/Chat/gRPC_CLIENT_CHAT&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.ClientChatImpl">
+}</component>
+  <component name="RunManager" selected="Application.ChatApp">
+    <configuration name="ChatApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ma.enset.servers.ChatApp" />
+      <module name="gRPC_CLIENT_CHAT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.enset.servers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClientChatGrpcImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ma.enset.servers.ClientChatGrpcImpl" />
       <module name="gRPC_CLIENT_CHAT" />
@@ -113,6 +122,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ChatApp" />
         <item itemvalue="Application.ClientChatImpl" />
         <item itemvalue="Application.ClientChatGrpcImpl" />
         <item itemvalue="Application.ClientChatimpl1" />
@@ -131,7 +141,8 @@
       <workItem from="1679469661474" duration="1038000" />
       <workItem from="1679470728993" duration="2565000" />
       <workItem from="1679476803390" duration="10093000" />
-      <workItem from="1679487642882" duration="305000" />
+      <workItem from="1679487642882" duration="2377000" />
+      <workItem from="1679687494082" duration="2969000" />
     </task>
     <servers />
   </component>
